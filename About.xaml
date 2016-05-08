@@ -1,0 +1,57 @@
+﻿<Controls:MetroWindow x:Class="stego_metro.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:stego_metro"
+        mc:Ignorable="d"
+       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+ BorderThickness="1,1,1,1"
+        BorderBrush="Teal"
+                      ResizeMode="CanMinimize"
+        Title="About" Height="300" Width="395" Loaded="MetroWindow_Loaded">
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="textBlock" 
+                       TextWrapping="Wrap" 
+                       Text="Image Steganography"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" FontSize="30"/>
+            <TextBlock x:Name="textBlock1" 
+                       TextWrapping="Wrap" 
+                       Text="Created by:"
+                       Foreground="Teal"
+                       FontSize="20"
+                       
+                       HorizontalAlignment="Center"
+                       Margin="0,50,0,0"/>
+
+            <TextBlock x:Name="textBlock2" 
+                       TextWrapping="Wrap" 
+                       Text="Tanmay Naik"
+                                              FontSize="15"
+
+                       HorizontalAlignment="Center"
+                       Margin="0,30,0,0"/>
+
+            <TextBlock x:Name="textBlock3" 
+                       TextWrapping="Wrap" 
+                                              FontSize="15"
+
+                       Text="Prabhakar Niraula"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,0"/>
+            <TextBlock x:Name="textBlock4" 
+                       TextWrapping="Wrap" 
+                       FontSize="15"
+                       Text="Darshil Parikh"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,0"/>
+
+
+
+
+
+        </StackPanel>
+    </Grid>
+</Controls:MetroWindow>
