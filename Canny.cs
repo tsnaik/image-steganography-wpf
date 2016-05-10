@@ -324,13 +324,16 @@ namespace stego_metro
         **                                                       **
         ***********************************************************/ 
         public static string ExtractText(Bitmap bmp)
-        {
+        { 
+            //read image in integer array
             int[,] rimg = ReadImage(bmp);
+            //apply gaussianfilter
             int[,] filtered = GaussianFilter(bmp, rimg);
+            //detect canny edges in filtered image
              DetectCannyEdges(filtered);
             
 
-
+            //embed data in cover image
             int height = bmp.Height;
             int width = bmp.Width;
             string data = string.Empty;
